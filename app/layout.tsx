@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Gaegu } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const gaegu = Gaegu({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Tempo",
-  description: "Orchestrate Your Day",
+  title: "NextLaunch",
+  description:
+    "Your complete Next.js starter kit. Get started with confidence.",
 };
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={gaegu.className}>{children}</body>
+      <body className={dmSans.className}>{children}</body>
     </html>
   );
 }
