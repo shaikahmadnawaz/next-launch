@@ -1,34 +1,37 @@
 {
-  "name": "tempo",
+  "name": "next-launch",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^0.9.4",
-    "@tanstack/react-query": "^5.52.0",
-    "axios": "^1.7.4",
+    "@tanstack/react-query": "^5.55.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-hook-form": "^7.52.2",
+    "next": "14.2.8",
+    "postgres": "^3.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
     "zod": "^3.23.8",
     "zustand": "^4.5.5"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "drizzle-kit": "^0.24.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "drizzle-kit": "^0.24.2",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.2.8",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
   }
 }
