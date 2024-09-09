@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
@@ -5,6 +7,7 @@ export default function Home() {
       <p className="text-lg">
         Your complete Next.js starter kit. Get started with confidence.
       </p>
+      <Button>Get Started</Button>
     </div>
   );
 }
